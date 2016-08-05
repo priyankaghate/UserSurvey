@@ -1,0 +1,4 @@
+<p><b>Which survey you want to do</b></p>
+<%@surveys.each do |survey|%>
+	<%=link_to survey.survey_type, survey_path(survey)%><hr>
+<%end%>
